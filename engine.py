@@ -128,7 +128,7 @@ while running == True:
             if ingame == True:
                 LefI += 0.2
                 RigI += 0.2
-                RD = random.randint(1, 15)
+                RD = random.randint(1, 50)
                 if (RD == 1):
                     premove = -premove
                     Target += premove
