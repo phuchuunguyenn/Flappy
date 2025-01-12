@@ -1,2 +1,2 @@
 
-                else:
+    while (len(bullet) > 0):
