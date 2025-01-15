@@ -1,3 +1,7 @@
-Flappy can have most 5 bullets. Add a bullet for Flappy by V, make a shot by C.
+Game rule:
 
-You'll win when make 10 shots hit the target
+- Flappy can have at most 5 ammos in moments.
+
+- Press 'V' to push an ammo, 'C' to shot (after shot, Flappy lost 1 ammo)
+
+- Make 10 in target, you win.
