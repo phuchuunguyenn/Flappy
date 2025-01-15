@@ -96,7 +96,9 @@ def OutBullet (l, r):
         pygame.draw.rect(screen, Black, (left - l + 5, hammos[i] + 5, right - left - 20, 10))
     i = 0
     while (len(bullet) > 0):
-        if (right == r) and ((hammos[i] >= Target and hammos[i] <= Target + 50) or (hammos[i] + 20 >= Target and hammos[i] <= Target + 50)):
+        left = max(bullet[0], l)
+        right = min(bullet[0] + 40, r)
+        if (right >= r - 20) and ((hammos[i] >= Target and hammos[i] <= Target + 100) or (hammos[i] + 20 >= Target and hammos[i] <= Target + 100)):
             Shots += 1
             del(bullet[0])
             del(hammos[0])
