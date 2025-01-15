@@ -72,6 +72,10 @@ def DrawTunnel (height, l, r):
 
 def OutTunnel (l, r):
     screen.fill(Black)
+    global losed, ingame
+    if (30000 < l):
+        losed = True
+        ingame = False
     for i in range(100):
         left = max((i + 1) * 300, l)
         right = min((i + 1) * 300 + 50, r)
